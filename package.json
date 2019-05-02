@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js --watch server.js --watch public/js/ --watch public/styles/css/ --watch views/ || true"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^5.16.0",
     "express": "^4.15.3",
     "hbs": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
   }
 }

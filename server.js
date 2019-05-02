@@ -49,6 +49,6 @@ app.get('/projects', (req, res) => {
     });
 });
 
-app.listen(port, ()=> {
-    console.log("Server is up and running on port ", port);
+app.listen(port, () => {
+    console.log(`Server is up and running at http://localhost:${port}`);
 });
